@@ -129,7 +129,7 @@ Ejecuta el servidor web y los tests de forma desatendida en la terminal con un s
 pnpm cy:run
 ```
 
-> **Resultado esperado:** Todas las pruebas pasan exitosamente con el reporte en verde (Passing: 6).
+> **Resultado verificado:** Las siete pruebas pasan con el reporte en verde (Passing: 7), incluida la multiplicación `5 × 5 = 25`.
 
 ---
 
@@ -143,6 +143,7 @@ La suite `cypress/e2e/calculadora.cy.js` valida los siguientes casos de prueba:
 4. **Operación de División:** Verifica que `8 ÷ 2 = 4` con evidencia gráfica.
 5. **Función de Limpieza (All Clear - AC):** Comprueba que al presionar `AC`, la pantalla se restablece a `0`.
 6. **Función de Borrado Parcial (DEL):** Valida que al ingresar `45` y presionar `DEL`, el valor restante sea `4`.
+7. **Multiplicación adicional:** Comprueba que `5 × 5 = 25`.
 
 ---
 

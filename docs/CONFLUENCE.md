@@ -36,7 +36,7 @@ pnpm install
 pnpm start
 ```
 
-La aplicación se sirve localmente en http://127.0.0.1:52343/Calculadora.html. Para abrir Cypress en modo interactivo, ejecuta `pnpm cy:open`. Para ejecutar la suite en consola, usa `pnpm cy:run`.
+La aplicación se sirve localmente en http://127.0.0.1:4173/Calculadora.html. Para abrir Cypress en modo interactivo, ejecuta `pnpm cy:open`. Para ejecutar la suite en consola, usa `pnpm cy:run`.
 
 ## Pruebas implementadas
 
@@ -46,9 +46,6 @@ La aplicación se sirve localmente en http://127.0.0.1:52343/Calculadora.html. P
 4. División: 8 ÷ 2 = 4.
 5. Limpieza completa con AC: la pantalla vuelve a 0.
 6. Borrado del último dígito con DEL: 45 queda en 4.
+7. Multiplicación adicional: 5 × 5 = 25.
 
-La suite está en `cypress/e2e/calculadora.cy.js`; al correrla, Cypress guarda capturas de algunos casos en `cypress/screenshots/`.
-
-## Importancia de Confluence
-
-Confluence permite mantener la documentación del proyecto en un espacio colaborativo, con historial de versiones, comentarios y acceso para el equipo. Complementa el README del repositorio cuando se necesita una explicación más extensa y facilita que estudiantes, docentes y colaboradores encuentren la información del proyecto.
+La suite está en `cypress/e2e/calculadora.cy.js`; los siete casos pasaron en Cypress. Cypress guarda capturas de algunos casos en `cypress/screenshots/`.

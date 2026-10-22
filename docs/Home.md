@@ -25,11 +25,11 @@ pnpm install
 pnpm start
 ```
 
-Abre http://127.0.0.1:52343/Calculadora.html para usar la calculadora. Ejecuta `pnpm cy:open` para abrir Cypress o `pnpm cy:run` para correr la suite de pruebas en consola.
+Abre http://127.0.0.1:4173/Calculadora.html para usar la calculadora. Ejecuta `pnpm cy:open` para abrir Cypress o `pnpm cy:run` para correr la suite de pruebas en consola.
 
 ## Pruebas
 
-La suite `cypress/e2e/calculadora.cy.js` contiene seis casos: suma, resta, multiplicación, división, limpieza total (AC) y borrado parcial (DEL).
+La suite `cypress/e2e/calculadora.cy.js` contiene siete casos: suma, resta, multiplicación, división, limpieza total (AC), borrado parcial (DEL) y multiplicación adicional (`5 × 5 = 25`).
 
 ## Documentación
 

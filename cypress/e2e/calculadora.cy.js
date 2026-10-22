@@ -35,6 +35,15 @@ describe('Pruebas E2E de la Calculadora', () => {
     cy.screenshot('02-multiplicacion-resultado');
   });
 
+  it('Debe comprobar una multiplicación de dos dígitos (5 × 5 = 25)', () => {
+    cy.contains('button', '5').click();
+    cy.contains('button', '×').click();
+    cy.contains('button', '5').click();
+    cy.contains('button', '=').click();
+    cy.get('#current-operand').should('have.text', '25');
+    cy.screenshot('05-multiplicacion-dos-cifras-resultado');
+  });
+
   it('Debe realizar una división correctamente (8 ÷ 2 = 4)', () => {
     cy.contains('button', '8').click();
     cy.contains('button', '÷').click();
