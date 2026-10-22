@@ -1,0 +1,17 @@
+{
+  "name": "calculadora-cypress",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Calculadora web con pruebas E2E en Cypress",
+  "scripts": {
+    "start": "http-server . -p 52343 -c-1",
+    "cy:open": "cypress open",
+    "cy:run": "start-server-and-test start http://127.0.0.1:52343 cy:run:only",
+    "cy:run:only": "cypress run --browser electron"
+  },
+  "devDependencies": {
+    "cypress": "^16.2.0",
+    "http-server": "^14.1.1",
+    "start-server-and-test": "^2.0.13"
+  }
+}
