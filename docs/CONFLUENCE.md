@@ -3,7 +3,7 @@
 ## Resumen del proyecto
 
 - **Nombre:** Calculadora Web con Pruebas Automatizadas
-- **Repositorio GitHub:** https://github.com/75141758al/Calculadora-cypress-
+- **Repositorio GitHub:** https://github.com/75141758aI/Calculadora-cypress-
 - **Autor:** Aldo Uriel Incarroca Jayo
 - **Institución:** IESTP Santiago Antúnez de Mayolo
 - **Programa:** Diseño y Programación Web
@@ -30,7 +30,7 @@ Aplicación web de una calculadora interactiva. La interfaz está construida con
 Requisitos: Node.js 20 o superior, Git y pnpm.
 
 ```bash
-git clone https://github.com/75141758al/Calculadora-cypress-.git
+git clone https://github.com/75141758aI/Calculadora-cypress-.git
 cd Calculadora-cypress-
 pnpm install
 pnpm start

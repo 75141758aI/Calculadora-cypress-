@@ -82,7 +82,7 @@ Sigue estos pasos para clonar y levantar el proyecto en tu entorno local:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/75141758al/Calculadora-cypress-.git
+git clone https://github.com/75141758aI/Calculadora-cypress-.git
 cd Calculadora-cypress-
 ```
 
@@ -162,4 +162,4 @@ La suite `cypress/e2e/calculadora.cy.js` valida los siguientes casos de prueba:
 - **Institución:** IESTP "Santiago Antúnez de Mayolo"
 - **Programa:** Diseño y Programación Web
 - **Unidad Didáctica:** Pruebas de Calidad de Software
-- **Repositorio oficial:** [75141758al/Calculadora-cypress-](https://github.com/75141758al/Calculadora-cypress-)
+- **Repositorio oficial:** [75141758aI/Calculadora-cypress-](https://github.com/75141758aI/Calculadora-cypress-)

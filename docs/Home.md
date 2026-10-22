@@ -7,7 +7,7 @@ Bienvenido a la documentación del proyecto **Calculadora Web con Pruebas Automa
 Calculadora web desarrollada con HTML5, CSS3 y JavaScript. Cypress verifica sus operaciones aritméticas, la limpieza de pantalla y el borrado del último dígito.
 
 - **Autor:** Aldo Uriel Incarroca Jayo
-- **Repositorio:** https://github.com/75141758al/Calculadora-cypress-
+- **Repositorio:** https://github.com/75141758aI/Calculadora-cypress-
 - **Unidad didáctica:** Pruebas de Calidad de Software
 
 ## Requisitos
@@ -19,7 +19,7 @@ Calculadora web desarrollada con HTML5, CSS3 y JavaScript. Cypress verifica sus 
 ## Instalación rápida
 
 ```bash
-git clone https://github.com/75141758al/Calculadora-cypress-.git
+git clone https://github.com/75141758aI/Calculadora-cypress-.git
 cd Calculadora-cypress-
 pnpm install
 pnpm start
