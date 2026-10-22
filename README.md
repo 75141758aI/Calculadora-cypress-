@@ -159,7 +159,4 @@ La suite `cypress/e2e/calculadora.cy.js` valida los siguientes casos de prueba:
 ## 👤 Autor
 
 - **Estudiante:** Aldo Uriel Incarroca Jayo
-- **Institución:** IESTP "Santiago Antúnez de Mayolo"
-- **Programa:** Diseño y Programación Web
-- **Unidad Didáctica:** Pruebas de Calidad de Software
 - **Repositorio oficial:** [75141758aI/Calculadora-cypress-](https://github.com/75141758aI/Calculadora-cypress-)
