@@ -33,11 +33,11 @@ El objetivo principal es asegurar la confiabilidad, exactitud en las operaciones
 ```plaintext
 calculadora-cypress/
 │
+├── docs/
+│   └── CONFLUENCE.md            # Contenido listo para la página de Confluence
 ├── cypress/
 │   ├── e2e/
 │   │   └── calculadora.cy.js    # Suite de pruebas E2E automatizadas
-│   ├── fixtures/
-│   │   └── example.json         # Datos de prueba simulados (fixtures)
 │   ├── screenshots/             # Capturas generadas tras la ejecución de pruebas
 │   └── support/
 │       ├── commands.js          # Comandos personalizados de Cypress
@@ -48,7 +48,8 @@ calculadora-cypress/
 ├── script.js                    # Lógica operativa de la calculadora
 ├── cypress.config.js            # Archivo de configuración central de Cypress
 ├── package.json                 # Metadatos del proyecto y scripts de ejecución
-├── package-lock.json            # Árbol de dependencias bloqueado
+├── pnpm-lock.yaml               # Versiones bloqueadas de las dependencias
+├── pnpm-workspace.yaml          # Configuración del workspace de pnpm
 ├── .gitignore                   # Archivos y carpetas ignorados por Git
 └── README.md                    # Documentación técnica principal del proyecto
 ```
@@ -59,9 +60,10 @@ calculadora-cypress/
 
 Antes de ejecutar este proyecto, asegúrate de tener instalado en tu equipo:
 
-1. **Node.js** (versión 16.x o superior): [Descargar Node.js](https://nodejs.org/)
+1. **Node.js** (versión 20.x o superior): [Descargar Node.js](https://nodejs.org/)
 2. **Git**: [Descargar Git para Windows](https://git-scm.com/)
-3. **Navegador Web moderno** (Google Chrome, Microsoft Edge, Mozilla Firefox o Electron).
+3. **pnpm** (gestor usado por este repositorio). Se puede habilitar con `corepack enable`.
+4. **Navegador Electron**, incluido con Cypress, o Chrome/Edge para el modo interactivo.
 
 Para verificar que las herramientas están correctamente instaladas, abre tu terminal y ejecuta:
 
@@ -80,8 +82,8 @@ Sigue estos pasos para clonar y levantar el proyecto en tu entorno local:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/Calculadora-cypress.git
-cd Calculadora-cypress
+git clone https://github.com/75141758al/Calculadora-cypress-.git
+cd Calculadora-cypress-
 ```
 
 ### 2. Instalar dependencias
@@ -89,8 +91,10 @@ cd Calculadora-cypress
 Ejecuta el siguiente comando para descargar las librerías necesarias (incluyendo Cypress y el servidor local):
 
 ```bash
-npm install
+pnpm install
 ```
+
+Si pnpm pregunta si puede ejecutar el script de instalación de Cypress, aprueba únicamente `cypress`; ese paso descarga el binario que usa el ejecutor de pruebas.
 
 ---
 
@@ -104,11 +108,11 @@ Permite visualizar la ejecución paso a paso en el navegador en tiempo real:
 
 1. Inicia el servidor web local en una terminal:
    ```bash
-   npm start
+   pnpm start
    ```
 2. En otra terminal, abre la interfaz visual de Cypress:
    ```bash
-   npm run cy:open
+   pnpm cy:open
    ```
 3. En la ventana de Cypress:
    - Selecciona **E2E Testing**.
@@ -122,7 +126,7 @@ Permite visualizar la ejecución paso a paso en el navegador en tiempo real:
 Ejecuta el servidor web y los tests de forma desatendida en la terminal con un solo comando:
 
 ```bash
-npm run cy:run
+pnpm cy:run
 ```
 
 > **Resultado esperado:** Todas las pruebas pasan exitosamente con el reporte en verde (Passing: 6).
@@ -158,4 +162,4 @@ La suite `cypress/e2e/calculadora.cy.js` valida los siguientes casos de prueba:
 - **Institución:** IESTP "Santiago Antúnez de Mayolo"
 - **Programa:** Diseño y Programación Web
 - **Unidad Didáctica:** Pruebas de Calidad de Software
-- **Repositorio oficial:** [https://github.com/75141758al/Calculadora-cypress-](https://github.com/75141758al/Calculadora-cypress-)
+- **Repositorio oficial:** [75141758al/Calculadora-cypress-](https://github.com/75141758al/Calculadora-cypress-)
